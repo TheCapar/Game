@@ -6,13 +6,13 @@ namespace Game
     {
         static void Main(string[] args)
         {
-            Musteri musteri = new Musteri {
+            Musteri musteri = new Musteri { //Burada müşteri oluşturma amacımız MusteriManager classımızın çalışıp çalışmadığını anlamak için yapmış bulunmaktayız.
                 Ad = "Deha",
                 SoyAd = "Çapar",
                 DogumYılı = 2000,
                 TcNo = 123456789
             };
-            Oyun oyun = new Oyun {
+            Oyun oyun = new Oyun {//Burada oyun oluşturma amacımız OyunManager classımızın çalışıp çalışmadığını anlamak için yapmış bulunmaktayız.
                 OyunAdi = "CoD",
                 OyunFiyati = 99.99,
                 KampanyaAdi = "Kdv",
@@ -21,7 +21,7 @@ namespace Game
                 Nakit = true,
                 KrediKarti = false,
             };
-            Kampanya kampanya = new Kampanya {
+            Kampanya kampanya = new Kampanya { //Burada kampanya oluşturma amacımız KampanyaManager classımızın çalışıp çalışmadığını anlamak için yapmış bulunmaktayız.
                 KampanyaAdi = "Kdv",
                 KampanyaOrani = 15,
                 KapmanyaVarmi = true,
