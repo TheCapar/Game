@@ -20,15 +20,19 @@ namespace Game
                 KapmanyaVarmi = true,
                 Nakit = true,
                 KrediKarti = false,
-                
             };
-            //Islemler musteriManager = new KampanyaManager();// Burada KampanyaManager yerine MusteriManager yazarsanız musteri manager işlemlerinin de sorunsuz çalıştığını görebilirsiniz.
-            //musteriManager.Add(musteri,kampanya);
-            //musteriManager.Delete(musteri,kampanya);
-            // musteriManager.Update(musteri,kampanya);
-            //OyunManager oyunManager = new OyunManager(); //Burada ise Oyun satış sisteminin çalışıp çalışmadığını kontrıl etmiş olduk.
-            //oyunManager.Fiyatlandirma(oyun);
-            //oyunManager.Ödeme(oyun);
+            Kampanya kampanya = new Kampanya {
+                KampanyaAdi = "Kdv",
+                KampanyaOrani = 15,
+                KapmanyaVarmi = true,
+            };
+            Islemler musteriManager = new KampanyaManager();// Burada KampanyaManager yerine MusteriManager yazarsanız musteri manager işlemlerinin de sorunsuz çalıştığını görebilirsiniz.
+            musteriManager.Add(musteri,kampanya);
+            musteriManager.Delete(musteri,kampanya);
+            musteriManager.Update(musteri,kampanya);
+            OyunManager oyunManager = new OyunManager(); //Burada ise Oyun satış sisteminin çalışıp çalışmadığını kontrıl etmiş olduk.
+            oyunManager.Fiyatlandirma(oyun);
+            oyunManager.Ödeme(oyun);
             
 
         }
