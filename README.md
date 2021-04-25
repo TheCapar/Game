@@ -1,2 +1,2 @@
 # Game
-C# öğrendiğim sırada yazmış olduğum projedir.
+C# öğrendiğim sırada yazmış olduğum proje ödevidir.
